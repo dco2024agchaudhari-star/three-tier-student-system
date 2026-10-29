@@ -1,0 +1,8 @@
+{
+  "name": "student-system-frontend",
+  "version": "1.0.0",
+  "description": "Tier 1 Presentation Layer for Student Information Management System (Vercel Deployment)",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

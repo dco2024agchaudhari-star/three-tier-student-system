@@ -1,0 +1,12 @@
+{
+  "name": "mcp-unified-cloud-orchestrator",
+  "version": "1.0.0",
+  "description": "Unified Multi-Platform MCP Agent for Claude (Vercel + Render + MongoDB Atlas)",
+  "main": "unified-orchestrator.js",
+  "scripts": {
+    "start": "node unified-orchestrator.js"
+  },
+  "keywords": ["mcp", "claude", "vercel", "render", "mongodb"],
+  "author": "",
+  "license": "MIT"
+}

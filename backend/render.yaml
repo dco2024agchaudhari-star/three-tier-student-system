@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: student-management-backend
+    runtime: node
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false # Must be entered in Render dashboard
+      - key: FRONTEND_URL
+        sync: false # Set to your deployed Vercel URL
+    healthCheckPath: /api/health

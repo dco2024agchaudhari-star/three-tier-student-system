@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "unified-cloud-orchestrator": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\DELL\\.gemini\\antigravity\\scratch\\three-tier-student-system\\mcp-unified-agent\\unified-orchestrator.js"
+      ],
+      "env": {
+        "VERCEL_API_TOKEN": "YOUR_VERCEL_TOKEN",
+        "VERCEL_PROJECT_ID": "prj_xxxxxxx",
+        "RENDER_API_KEY": "rnd_xxxxxxx",
+        "RENDER_SERVICE_ID": "srv-xxxxxxx",
+        "MONGODB_ATLAS_PUBLIC_KEY": "your_public_key",
+        "MONGODB_ATLAS_PRIVATE_KEY": "your_private_key",
+        "MONGODB_ATLAS_GROUP_ID": "your_project_id"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_xxxxxxxxxxxx"
+      }
+    },
+    "mongodb-atlas": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-mongodb"],
+      "env": {
+        "MONGODB_URI": "mongodb+srv://studentAdmin:yourSecurePassword123@cluster0.abcde.mongodb.net/studentDB?retryWrites=true&w=majority"
+      }
+    }
+  }
+}
