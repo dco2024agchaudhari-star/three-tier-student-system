@@ -6,7 +6,7 @@
 // Configuration State
 const DEFAULT_API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? 'http://localhost:5000'
-  : 'https://student-management-backend.onrender.com';
+  : 'https://three-tier-student-system-hgyd.onrender.com';
 
 let API_BASE_URL = localStorage.getItem('STUDENT_API_URL') || DEFAULT_API_URL;
 let currentStudents = [];
